@@ -1,0 +1,5 @@
+<div class="list-group">
+    <a href="/user/{{contact.$key}}" *ngFor="let contact of contacts | async" class="list-group-item">
+        <img src="{{contact.profilePicture}}" width="25" class="img-rounded"> {{contact.name}}
+    </a>
+</div>
